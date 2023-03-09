@@ -491,7 +491,7 @@ def kynan_about_callback(update, context):
                 [
                  [
                     InlineKeyboardButton(text="Owner", url="https://t.me/saya_wiki"),
-                    InlineKeyboardButton(text="Donate", url="https://telegra.ph/file/15c3d47c170ad0813020d.jpg"),
+                    InlineKeyboardButton(text="Donate", url="https://saweria.co/wiki28"),
                  ],
                  [
                     InlineKeyboardButton(text="Group", url="https://t.me/xgcwiki"),
