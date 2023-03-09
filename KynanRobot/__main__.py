@@ -484,7 +484,7 @@ def kynan_about_callback(update, context):
         )
     elif query.data == "kynan_own":
         query.message.edit_text(
-            Semoga hati nurani anda terketuk aamiin 🤲 bisa lah donasi*"
+            text="*Semoga hati nurani anda terketuk aamiin 🤲 bisa lah donasi*"
             "\npilih tombol dibawah mau langsung link doansi atau bisa pc pc atau ke group nya langsung gitu.",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
