@@ -92,7 +92,7 @@ buttons = [
         InlineKeyboardButton(text="Help Music", callback_data="kynan_"),
     ],
     [
-        InlineKeyboardButton(text="About Bot", callback_data="kynan_own}"
+        InlineKeyboardButton(text="About Bot", callback_data="kynan_support}"
         ),
     ],
     [
@@ -430,14 +430,18 @@ def kynan_about_callback(update, context):
         )
     elif query.data == "kynan_support":
         query.message.edit_text(
-            text="*📝 Bantuan Perintah Saya*"
-            "\npilih tombol dibawah untuk melihat bantuan perintah.",
+            text="*Semoga hati nurani anda terketuk aamiin 🤲 bisa lah donasi*"
+            "\npilih tombol dibawah mau langsung link doansi atau bisa pc pc atau ke group nya langsung gitu.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ᴍᴜsɪᴄ ♬", callback_data="kynan_"),
-                    InlineKeyboardButton(text="✮ ᴍᴀɴᴀɢᴇ", callback_data="help_back"),
+                    InlineKeyboardButton(text="Owner", url="https://t.me/saya_wiki"),
+                    InlineKeyboardButton(text="Donate", url="{DONATE_LINK}"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Group", url="https://t.me/xgcwiki"),
+                    InlineKeyboardButton(text="Channel", url="https://t.me/xchwiki"),
                  ],
                  [
                     InlineKeyboardButton(text="⩹", callback_data="kynan_back"),
