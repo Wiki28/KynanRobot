@@ -5,25 +5,26 @@ from KynanRobot.events import register
 from KynanRobot import telethn                 
 
 @register(pattern="^/asupan ?(.*)")
+async@register(pattern="^/asupan ?(.*)")
 async def _(event):
-    memeks = await event.reply("**Mencari Video Asupan...🔍**") 
+    memeks = await event.reply("`Mencari Video Asupan...🔍`") 
     try:
         asupannya = [
             asupan
-            async for asupan in ubot2.iter_messages(
-            "@ttsahming", filter=InputMessagesFilterVideo
+            async for asupan in telethn.iter_messages(
+            "punyakenkan", filter=InputMessagesFilterVideo
             )
         ]
         kontols = random.choice(asupannya)
-        pantek = await ubot2.download_media(kontols)
-        await tbot.send_file(
+        pantek = await telethn.download_media(kontols)
+        await telethn.send_file(
             event.chat.id, 
             caption="**Nih Asupan nya Kak**", 
             file=pantek
             )
         await memeks.delete()
     except Exception:
-        await memeks.edit("**Asupan nya kosong kesian..**")
+        await memeks.edit("**Asupan nya kosong kesian..**")  
 
 
 @register(pattern="^/ppanime ?(.*)")
