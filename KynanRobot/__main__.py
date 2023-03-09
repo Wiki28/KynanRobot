@@ -92,7 +92,7 @@ buttons = [
         InlineKeyboardButton(text="Help Music", callback_data="kynan_"),
     ],
     [
-        InlineKeyboardButton(text="About Bot", callback_data="kynan_support"),
+        InlineKeyboardButton(text="About Bot", callback_data="kynan_own"),
     ],
     [
         InlineKeyboardButton(
@@ -436,7 +436,7 @@ def kynan_about_callback(update, context):
                 [
                  [
                     InlineKeyboardButton(text="Owner", url="https://t.me/saya_wiki"),
-                    InlineKeyboardButton(text="Donate", url="{DONATE_LINK}"),
+                    InlineKeyboardButton(text="Donate", url="https://telegra.ph/file/15c3d47c170ad0813020d.jpg"),
                  ],
                  [
                     InlineKeyboardButton(text="Group", url="https://t.me/xgcwiki"),
@@ -484,14 +484,16 @@ def kynan_about_callback(update, context):
         )
     elif query.data == "kynan_own":
         query.message.edit_text(
-            text="👨‍💻 Untuk yang ingin berdonasi sebagai ucapan terimakasih kepada Pembuat Saya."
-            "\n\n Bisa melalui Qris atau Contact",
+            Semoga hati nurani anda terketuk aamiin 🤲 bisa lah donasi*"
+            "\npilih tombol dibawah mau langsung link doansi atau bisa pc pc atau ke group nya langsung gitu.",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
                     InlineKeyboardButton(text="Owner", url="https://t.me/saya_wiki"),
-                    InlineKeyboardButton(text="Donate", url="{DONATE_LINK}"),
+                    InlineKeyboardButton(text="Donate", url="https://telegra.ph/file/15c3d47c170ad0813020d.jpg"),
+                 ],
+                 [
                     InlineKeyboardButton(text="Group", url="https://t.me/xgcwiki"),
                     InlineKeyboardButton(text="Channel", url="https://t.me/xchwiki"),
                  ],
