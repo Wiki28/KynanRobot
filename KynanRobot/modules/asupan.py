@@ -12,7 +12,7 @@ async def _(event):
         asupannya = [
             asupan
             async for asupan in telethn.iter_messages(
-            "punyakenkan", filter=InputMessagesFilterVideo
+            "ttsahming", filter=InputMessagesFilterVideo
             )
         ]
         kontols = random.choice(asupannya)
