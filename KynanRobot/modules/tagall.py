@@ -10,7 +10,7 @@ from KynanRobot import telethn as client
 spam_chats = []
 
 
-@client.on(events.NewMessage(pattern="^/tagall ?(.*)"))
+@client.on(events.NewMessage(pattern="^/all ?(.*)"))
 @client.on(events.NewMessage(pattern="^@all ?(.*)"))
 async def mentionall(event):
     chat_id = event.chat_id
@@ -101,5 +101,5 @@ __mod_name__ = "Tag-All"
 __help__ = """
 ──「 Only for Admins 」──
 
-ᐉ /tagall or @all '(reply to message or add another message) To mention all members in your group, without exception.'
+ᐉ /all or @all '(reply to message or add another message) To mention all members in your group, without exception.'
 """
