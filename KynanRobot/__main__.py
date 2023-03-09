@@ -78,31 +78,26 @@ PM_START_TEXT = """
 ✪ Bot Music, Bisa Memutar Music dan Streaming Di Obrolan Suara Group.
 ✪ Bot Manager, Memperindah Tampilan Group atau Hanya Berbuat Beramin-main
 ━━━━━━━━━━━━━━━━━━━━━━━━
-➻ ᴜᴘᴛɪᴍᴇ ᐉ `{}`
-➻ ᴜsᴇʀs ᐉ `{}`
-➻ ɢʀᴏᴜᴘꜱ ᐉ `{}`
-━━━━━━━━━━━━━━━━━━━━━━━━
-᳁ ᴛᴇᴋᴀɴ /help ᴀᴛᴀᴜ /mhelp ᴜɴᴛᴜᴋ ᴘᴇʀɪɴᴛᴀʜ ꜱᴀʏᴀ ʏᴀɴɢ ᴛᴇʀꜱᴇᴅɪᴀ.
+✪ Tekan /help Untuk Perintah Yang Tersedia
 ━━━━━━━━━━━━━━━━━━━━━━━━
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="https://t.me/{OWNER_USERNAME}"
-        ),
-        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/{SUPPORT_CHAT}"
+        InlineKeyboardButton(text="My Bos", url="https://t.me/saya_wiki"
         ),
     ],
     [
-        InlineKeyboardButton(text="ʙᴀɴᴛᴜᴀɴ", callback_data="kynan_support"
-       ),
-        InlineKeyboardButton(
-            text="ᴅᴏɴᴀsɪ ❤️", callback_data="kynan_own"
-       ),
+        InlineKeyboardButton(text="Help Bot", callback_data="help_back"),
+        InlineKeyboardButton(text="Help Music", callback_data="kynan_"),
+    ],
+    [
+        InlineKeyboardButton(text="About Bot", callback_data="kynan_own}"
+        ),
     ],
     [
         InlineKeyboardButton(
-            text="ᴛᴀᴍʙᴀʜᴋᴀɴ ᴀᴋᴜ ᴅɪʜᴀᴛɪᴍᴜ ❤️", url="https://t.me/{BOT_USERNAME}?startgroup=true"
+            text="Add Me To Your Group", url="https://t.me/xWikiBot?startgroup=true"
         ),
      ],
 ]
@@ -368,7 +363,7 @@ def kynan_about_callback(update, context):
                     InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ᴇxsᴛʀᴀ", callback_data="kynan_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="⩹", callback_data="kynan_support"),
+                    InlineKeyboardButton(text="⩹", callback_data="kynan_back"),
                  ]
                 ]
             ),
@@ -492,8 +487,10 @@ def kynan_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ϙʀɪs", url="{DONATE_LINK}"),
-                    InlineKeyboardButton(text="ᴅᴏɴᴀsɪ ❤️", url="https://t.me/{OWNER_USERNAME}"),
+                    InlineKeyboardButton(text="Owner", url="https://t.me/saya_wiki"),
+                    InlineKeyboardButton(text="Donate", url="{DONATE_LINK}"),
+                    InlineKeyboardButton(text="Group", url="https://t.me/xgcwiki"),
+                    InlineKeyboardButton(text="Channel", url="https://t.me/xchwiki"),
                  ],
                  [
                     InlineKeyboardButton(text="⩹", callback_data="kynan_back"),
@@ -800,14 +797,13 @@ def main():
                 chat_id=f"@{SUPPORT_CHAT}",
                 photo=START_IMG,
                 caption=f"""
-** ༊ {BOT_NAME} ᴀᴋᴜ ʜɪᴅᴜᴘ ❤️**
+** ༊ {BOT_NAME} I Am Alive 🥲**
 
-┏━━━━━━━━━━━━━━━━━━━┓
-┠➣ **ᴘʏᴛʜᴏɴ :** `{y()}`
-┠➣ **ʟɪʙʀᴀʀʏ :** `{telever}`
-┠➣ **ᴛᴇʟᴇᴛʜᴏɴ :** `{tlhver}`
-┠➣ **ᴩʏʀᴏɢʀᴀᴍ :** `{pyrover}`
-┗━━━━━━━━━━━━━━━━━━━┛""",
+**Python   :** `{y()}`
+**Library  :** `{telever}`
+**Telethon :** `{tlhver}`
+**Pyrogram :** `{pyrover}`
+""",
                 parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
