@@ -92,8 +92,7 @@ buttons = [
         InlineKeyboardButton(text="Help Music", callback_data="kynan_"),
     ],
     [
-        InlineKeyboardButton(text="About Bot", callback_data="kynan_support"}"
-        ),
+        InlineKeyboardButton(text="About Bot", callback_data="kynan_support"),
     ],
     [
         InlineKeyboardButton(
