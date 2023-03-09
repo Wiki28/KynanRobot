@@ -78,7 +78,7 @@ PM_START_TEXT = """
 ✪ Bot Music, Bisa Memutar Music dan Streaming Di Obrolan Suara Group.
 ✪ Bot Manager, Memperindah Tampilan Group atau Hanya Berbuat Beramin-main
 ━━━━━━━━━━━━━━━━━━━━━━━━
-✪ Tekan /help Untuk Perintah Yang Tersedia
+✪ Tekan /help atau /mhelp Untuk Perintah Yang Tersedia
 ━━━━━━━━━━━━━━━━━━━━━━━━
 """
 
