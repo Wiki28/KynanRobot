@@ -73,9 +73,10 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*ʜᴇʟʟᴏ {} !*
-━━━━━━━━━━━━━━━━━━━━━━━━
-{} ᴅɪʙᴜᴀᴛ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇʟᴏʟᴀ ᴅᴀɴ ᴍᴇᴍᴜᴛᴀʀ ᴍᴜꜱɪᴋ ᴅɪɢʀᴜᴘ ᴀɴᴅᴀ ᴅᴇɴɢᴀɴ ʙᴇʀʙᴀɢᴀɪ ꜰɪᴛᴜʀ.
+*Hello {} !*
+✪ Saya Adalah Bot Music+Manager.
+✪ Bot Music, Bisa Memutar Music dan Streaming Di Obrolan Suara Group.
+✪ Bot Manager, Memperindah Tampilan Group atau Hanya Berbuat Beramin-main
 ━━━━━━━━━━━━━━━━━━━━━━━━
 ➻ ᴜᴘᴛɪᴍᴇ ᐉ `{}`
 ➻ ᴜsᴇʀs ᐉ `{}`
