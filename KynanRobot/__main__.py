@@ -92,7 +92,7 @@ buttons = [
         InlineKeyboardButton(text="Help Music", callback_data="kynan_"),
     ],
     [
-        InlineKeyboardButton(text="About Bot", callback_data="kynan_support}"
+        InlineKeyboardButton(text="About Bot", callback_data="kynan_support"}"
         ),
     ],
     [
@@ -215,7 +215,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             START_IMG,
-            caption="ʙᴀɴᴛɪɴɢ ᴅᴇᴅᴇ ᴅᴏɴɢ ʙᴀɴɢ \n<b>​ ❤️ :</b> <code>{}</code>".format(
+            caption="Halo Saya Manager + Music \n<b>​ ❤️ :</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -348,19 +348,19 @@ def kynan_about_callback(update, context):
     query = update.callback_query
     if query.data == "kynan_":
         query.message.edit_text(
-            text="♬ ʙᴀɴᴛᴜᴀɴ ᴘᴇʀɪɴᴛᴀʜ ᴍᴜꜱɪᴄ."
-            "\nᴘɪʟɪʜ ᴍᴇɴᴜ ᴅɪ ʙᴀᴡᴀʜ ɪɴɪ ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ʙᴀɴᴛᴜᴀɴ ᴍᴜꜱɪᴄ. ",
+            text="♬ Bantuan Perintah Musik."
+            "\nLihat di bawah ini untuk perintah musik lebih detail. ",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ᴀᴅᴍɪɴ", callback_data="kynan_admin"),
-                    InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ʙᴏᴛ", callback_data="kynan_notes"),
+                    InlineKeyboardButton(text="Perintah Admin", callback_data="kynan_admin"),
+                    InlineKeyboardButton(text="Perintah Bot", callback_data="kynan_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ᴘʟᴀʏ", callback_data="source_"),
-                    InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ᴇxsᴛʀᴀ", callback_data="kynan_credit"),
+                    InlineKeyboardButton(text="Perintah Play", callback_data="source_"),
+                    InlineKeyboardButton(text="Perintah Ekstra", callback_data="kynan_credit"),
                  ],
                  [
                     InlineKeyboardButton(text="⩹", callback_data="kynan_back"),
