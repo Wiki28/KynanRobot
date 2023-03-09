@@ -5,14 +5,13 @@ from KynanRobot.events import register
 from KynanRobot import telethn                 
 
 @register(pattern="^/asupan ?(.*)")
-async@register(pattern="^/asupan ?(.*)")
 async def _(event):
     memeks = await event.reply("`Mencari Video Asupan...🔍`") 
     try:
         asupannya = [
             asupan
             async for asupan in telethn.iter_messages(
-            "punyakenkan", filter=InputMessagesFilterVideo
+            "ttsahming", filter=InputMessagesFilterVideo
             )
         ]
         kontols = random.choice(asupannya)
