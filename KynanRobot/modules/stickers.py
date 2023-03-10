@@ -462,8 +462,8 @@ __help__ = """
 """
 
 __mod_name__ = "Stickers"
-STICKERID_HANDLER = DisableAbleCommandHandler("stickerid", stickerid)
-GETSTICKER_HANDLER = DisableAbleCommandHandler("getsticker", getsticker)
+STICKERID_HANDLER = DisableAbleCommandHandler("ids", ids)
+GETSTICKER_HANDLER = DisableAbleCommandHandler("gets", gets)
 KANG_HANDLER = DisableAbleCommandHandler("kang", kang, admin_ok=True)
 STICKERS_HANDLER = DisableAbleCommandHandler("stickers", cb_sticker)
 
