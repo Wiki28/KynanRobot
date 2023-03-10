@@ -506,26 +506,26 @@ def __user_info__(user_id):
 
 __help__ = """
 *ID:*
- ᐉ /id*:* get the current group id. If used by replying to a message, gets that user's id.
- ᐉ /gifid*:* reply to a gif to me to tell you its file ID.
+ ᐉ /id*:* dapatkan id grup saat ini. Jika digunakan dengan membalas pesan, dapatkan id pengguna tersebut.
+ ᐉ /gifid*:* balas gif kepada saya untuk memberi tahu Anda ID file-nya.
 
 *Self added information:* 
- ᐉ /setme <text>*:* will set your info
- ᐉ /me*:* will get your or another user's info.
+ ᐉ /setme <text>*:* akan mengatur info Anda
+ ᐉ /me*:* akan mendapatkan info Anda atau pengguna lain.
 *Examples:* 💡
  ᐉ /setme I am a wolf.
- ᐉ /me @username(defaults to yours if no user specified)
+ ᐉ /me @username(default ke milik Anda jika tidak ada pengguna yang ditentukan)
 
 *Information others add on you:* 
- ᐉ /bio*:* will get your or another user's bio. This cannot be set by yourself.
- ᐉ /setbio <text>*:* while replying, will save another user's bio 
+ ᐉ /bio*:* akan mendapatkan bio Anda atau pengguna lain. Ini tidak dapat diatur sendiri.
+ ᐉ /setbio <text>*:* saat membalas, akan menyimpan bio pengguna lain 
 *Examples:* 💡
- ᐉ /bio @username(defaults to yours if not specified).`
- ᐉ /setbio This user is a wolf` (reply to the user)
+ ᐉ /bio @username(default ke milik Anda jika tidak ditentukan).`
+ ᐉ /setbio Pengguna ini adalah wolf` (membalas pengguna)
 
-*Overall Information about you:*
- ᐉ /info*:* get information about a user. 
- ᐉ /myinfo*:* Shows info about the user who sent this command.
+*Informasi Keseluruhan tentang Anda:*
+ ᐉ /info*:* mendapatkan informasi tentang pengguna. 
+ ᐉ /myinfo*:* Menampilkan info tentang pengguna yang mengirimkan perintah ini.
 """
 
 SET_BIO_HANDLER = DisableAbleCommandHandler("setbio", set_about_bio)
