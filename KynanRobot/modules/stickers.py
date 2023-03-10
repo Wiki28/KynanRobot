@@ -23,7 +23,7 @@ combot_stickers_url = "https://combot.org/telegram/stickers?q="
 
 
 @run_async
-def stickerid(update: Update, context: CallbackContext):
+def ids(update: Update, context: CallbackContext):
     msg = update.effective_message
     if msg.reply_to_message and msg.reply_to_message.sticker:
         update.effective_message.reply_text(
@@ -64,7 +64,7 @@ def cb_sticker(update: Update, context: CallbackContext):
     msg.reply_text(reply, parse_mode=ParseMode.MARKDOWN)
 
 
-def getsticker(update: Update, context: CallbackContext):
+def gets(update: Update, context: CallbackContext):
     bot = context.bot
     msg = update.effective_message
     chat_id = update.effective_chat.id
@@ -76,7 +76,7 @@ def getsticker(update: Update, context: CallbackContext):
         os.remove("sticker.png")
     else:
         update.effective_message.reply_text(
-            "Please reply to a sticker for me to upload its PNG."
+            "Harap balas stiker untuk saya unggah PNG-nya."
         )
 
 
@@ -122,7 +122,7 @@ def kang(update: Update, context: CallbackContext):
         elif msg.reply_to_message.document:
             file_id = msg.reply_to_message.document.file_id
         else:
-            msg.reply_text("Yea, I can't kang that.")
+            msg.reply_text("Ya, saya tidak bisa kang itu.")
 
         kang_file = context.bot.get_file(file_id)
         if not is_animated:
@@ -135,7 +135,7 @@ def kang(update: Update, context: CallbackContext):
         elif msg.reply_to_message.sticker and msg.reply_to_message.sticker.emoji:
             sticker_emoji = msg.reply_to_message.sticker.emoji
         else:
-            sticker_emoji = "🤔"
+            sticker_emoji = "🥲"
 
         if not is_animated:
             try:
@@ -281,7 +281,7 @@ def kang(update: Update, context: CallbackContext):
                 png_sticker = urlemoji[1]
                 sticker_emoji = urlemoji[2]
             except IndexError:
-                sticker_emoji = "🤔"
+                sticker_emoji = "🥲"
             urllib.urlretrieve(png_sticker, kangsticker)
             im = Image.open(kangsticker)
             maxsize = (512, 512)
@@ -455,10 +455,10 @@ def makepack_internal(
 
 
 __help__ = """
- ᐉ /stickerid*:* reply to a sticker to me to tell you its file ID.
- ᐉ /getsticker*:* reply to a sticker to me to upload its raw PNG file.
- ᐉ /kang*:* reply to a sticker to add it to your pack.
- ᐉ /stickers*:* Find stickers for given term on combot sticker catalogue
+ ᐉ /ids*:* balas stiker ke saya untuk memberi tahu Anda ID file-nya.
+ ᐉ /gets*:* balas stiker ke saya untuk mengunggah file PNG mentahnya.
+ ᐉ /kang*:* balas stiker untuk menambahkannya ke paket Anda.
+ ᐉ /stickers*:* Temukan stiker untuk istilah tertentu di katalog stiker kombo
 """
 
 __mod_name__ = "Stickers"
