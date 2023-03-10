@@ -53,8 +53,8 @@ async def ban_zombies(_, message: Message):
 __help__ = """
 *Remove Deleted Accounts*
 
- ᐉ /zombies *:* Starts searching for deleted accounts in the group.
- ᐉ /zombies clean *:* Removes the deleted accounts from the group.
+ ᐉ /zombies *:* Mulai mencari akun yang dihapus di grup.
+ ᐉ /zombies clean *:* Menghapus akun yang dihapus dari grup.
 """
 
 
