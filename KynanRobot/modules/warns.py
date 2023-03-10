@@ -512,18 +512,18 @@ def __chat_settings__(chat_id, user_id):
 
 
 __help__ = """
- ᐉ `/warns <userhandle>`*:* get a user's number, and reason, of warns.
- ᐉ `/warnlist`*:* list of all current warning filters
+ ᐉ `/warns <userhandle>`*:* dapatkan nomor pengguna, dan alasan, dari peringatan.
+ ᐉ `/warnlist`*:* daftar semua filter peringatan saat ini
 
 *Admins only:*
- ᐉ `/warn <userhandle>`*:* warn a user. After 3 warns, the user will be banned from the group. Can also be used as a reply.
- ᐉ `/dwarn <userhandle>`*:* warn a user and delete the message. After 3 warns, the user will be banned from the group. Can also be used as a reply.
- ᐉ `/resetwarn <userhandle>`*:* reset the warns for a user. Can also be used as a reply.
- ᐉ `/addwarn <keyword> <reply message>`*:* set a warning filter on a certain keyword. If you want your keyword to \
-be a sentence, encompass it with quotes, as such: `/addwarn "very angry" This is an angry user`.
- ᐉ `/nowarn <keyword>`*:* stop a warning filter
- ᐉ `/warnlimit <num>`*:* set the warning limit
- ᐉ `/strongwarn <on/yes/off/no>`*:* If set to on, exceeding the warn limit will result in a ban. Else, will just punch.
+ ᐉ `/warn <userhandle>`*:* memperingatkan pengguna. Setelah 3 peringatan, pengguna akan diblokir dari grup. Bisa juga digunakan sebagai balasan.
+ ᐉ `/dwarn <userhandle>`*:* peringatkan pengguna dan hapus pesan. Setelah 3 peringatan, pengguna akan diblokir dari grup. Bisa juga digunakan sebagai balasan.
+ ᐉ `/resetwarn <userhandle>`*:* setel ulang peringatan untuk pengguna. Bisa juga digunakan sebagai balasan.
+ ᐉ `/addwarn <keyword> <reply message>`*:* atur filter peringatan pada kata kunci tertentu. Jika Anda ingin kata kunci Anda \
+menjadi kalimat, sertai dengan tanda kutip, seperti itu: `/addwarn "sangat marah" Ini adalah pengguna yang marah`.
+ ᐉ `/nowarn <keyword>`*:* menghentikan filter peringatan
+ ᐉ `/warnlimit <num>`*:* mengatur batas peringatan
+ ᐉ `/strongwarn <on/yes/off/no>`*:* Jika diaktifkan, melebihi batas peringatan akan mengakibatkan pemblokiran. Lain, hanya akan memukul.
 """
 
 __mod_name__ = "Warns"
