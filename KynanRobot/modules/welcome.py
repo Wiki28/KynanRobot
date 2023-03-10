@@ -1054,22 +1054,22 @@ def __chat_settings__(chat_id, user_id):
 
 __help__ = """
 *Admins only:*
- ᐉ /welcome <on/off>*:* enable/disable welcome messages.
- ᐉ /welcome*:* shows current welcome settings.
- ᐉ /welcome noformat*:* shows current welcome settings, without the formatting - useful to recycle your welcome messages!
- ᐉ /goodbye*:* same usage and args as `/welcome`.
- ᐉ /setwelcome <sometext>*:* set a custom welcome message. If used replying to media, uses that media.
- ᐉ /setgoodbye <sometext>*:* set a custom goodbye message. If used replying to media, uses that media.
- ᐉ /resetwelcome*:* reset to the default welcome message.
- ᐉ /resetgoodbye*:* reset to the default goodbye message.
- ᐉ /cleanwelcome <on/off>*:* On new member, try to delete the previous welcome message to avoid spamming the chat.
- ᐉ /welcomemutehelp*:* gives information about welcome mutes.
- ᐉ /cleanservice <on/off*:* deletes telegrams welcome/left service messages. 
+ ᐉ /welcome <on/off>*:* enable/disable selamat datang pesan.
+ ᐉ /welcome*:* menunjukkan pengaturan selamat datang saat ini.
+ ᐉ /welcome noformat*:* menunjukkan pengaturan selamat datang saat ini, tanpa pemformatan - berguna untuk mendaur ulang pesan selamat datang Anda!
+ ᐉ /goodbye*:* penggunaan yang sama dan argumen sebagai `/welcome`.
+ ᐉ /setwelcome <sometext>*:* atur pesan selamat datang khusus. Jika digunakan membalas media, gunakan media itu.
+ ᐉ /setgoodbye <sometext>*:* atur pesan selamat tinggal khusus. Jika digunakan membalas media, gunakan media itu.
+ ᐉ /resetwelcome*:* setel ulang ke pesan selamat datang default.
+ ᐉ /resetgoodbye*:* atur ulang ke pesan selamat tinggal default.
+ ᐉ /cleanwelcome <on/off>*:* Pada anggota baru, coba hapus pesan selamat datang sebelumnya untuk menghindari spamming pada obrolan.
+ ᐉ /welcomemutehelp*:* memberikan informasi tentang bisu selamat datang.
+ ᐉ /cleanservice <on/off*:* menghapus telegram welcome/left pesan layanan. 
  *Example:*
-user joined chat, user left chat.
+pengguna bergabung dengan obrolan, pengguna keluar dari obrolan.
 
 *Welcome markdown:* 
- ᐉ /welcomehelp*:* view more formatting information for custom welcome/goodbye messages.
+ ᐉ /welcomehelp*:* lihat lebih banyak informasi pemformatan untuk kustom welcome/goodbye pesan.
 """
 
 NEW_MEM_HANDLER = MessageHandler(Filters.status_update.new_chat_members, new_member)
