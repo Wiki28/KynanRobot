@@ -38,8 +38,8 @@ async def _(event):
 __help__ = """
 I can find weather of all cities
 
- ᐉ /weather <city>*:* Advanced weather module, usage same as /weather
- ᐉ /weather moon*:* Get the current status of moon
+ ᐉ /cuaca <city>*:* Modul cuaca lanjutan, penggunaan sama seperti /cuaca
+ ᐉ /cuaca bulan*:* Dapatkan status bulan saat ini
 """
 
-__mod_name__ = "Weather"
+__mod_name__ = "Cuaca"
