@@ -319,9 +319,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "ᴅᴏɴᴀsɪ ​❤️", url="https://graph.org/file/2982a27fe0e1500bf5b17.jpg"),
+                                "Channel", url="https://t.me/xchwiki"),
                             InlineKeyboardButton(
-                                "ᴏᴡɴᴇʀ", url="https://t.me/Riizzvbss"),
+                                "Owner", url="https://t.me/saya_wiki"),
                         ],
                     ]
                 ),
