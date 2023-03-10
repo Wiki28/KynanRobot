@@ -46,10 +46,10 @@ def totranslate(update: Update, context: CallbackContext) -> None:
 
 
 __help__ = """
- ᐉ /tr or /tl (language code) as reply to a long message
+ ᐉ /tr or /tl (language code) sebagai balasan untuk pesan yang panjang
 *Example:* 
- ᐉ /tr id*:* translates something to indonesia
- ᐉ /tr en-id*:* translates english to indonesia
+ ᐉ /tr id*:* menerjemahkan sesuatu ke dalam bahasa Indonesia
+ ᐉ /tr en-id*:* menerjemahkan bahasa inggris ke indonesia
 
 *Language Codes*
 `af,am,ar,az,be,bg,bn,bs,ca,ceb,co,cs,cy,da,de,el,en,eo,es,
