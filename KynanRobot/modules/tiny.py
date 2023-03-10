@@ -81,5 +81,5 @@ async def _(event):
 
 __mod_name__ = "Tiny"
 __help__ = """
-ᐉ /tiny*:* reply a sticker and see magic
+ᐉ /tiny*:* balas stiker dan lihat keajaiban
 """
