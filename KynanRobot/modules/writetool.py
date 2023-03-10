@@ -19,7 +19,7 @@ def handwrite(update: Update, context: CallbackContext):
     message.reply_photo(
         photo=req,
         caption=f"""
-Successfully Written Text ❤️
+Successfully Tertulis Text ❤️
 
 ༊ **Written By :** [{BOT_NAME}](https://t.me/{BOT_USERNAME})
 ༁ **Requested by :** {update.effective_user.first_name}
@@ -39,13 +39,13 @@ Successfully Written Text ❤️
 __help__ = """
  Writes the given text on white page with a pen
 
-ᐉ /write <text> *:* Writes the given text.
+ᐉ /nulis <text> *:* Writes the given text.
 """
 
 WRITE_HANDLER = DisableAbleCommandHandler("write", handwrite)
 
 dispatcher.add_handler(WRITE_HANDLER)
 
-__mod_name__ = "Write-Tool"
-__command_list__ = ["write"]
+__mod_name__ = "Nulis"
+__command_list__ = ["nulis"]
 __handlers__ = [WRITE_HANDLER]
