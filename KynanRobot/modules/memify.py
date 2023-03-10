@@ -6,7 +6,7 @@ from PIL import Image, ImageDraw, ImageFont
 from KynanRobot import telethn as bot
 from KynanRobot.events import register
 
-Credit = "Kynan"
+Credit = "Wiki W"
 
 
 @register(pattern="^/mmf ?(.*)")
@@ -30,7 +30,7 @@ async def handler(event):
 
     msg = await event.reply("```Memifying this image! ✊🏻 ```")
 
-    if "Kynan" in Credit:
+    if "Wiki W" in Credit:
         pass
 
     else:
