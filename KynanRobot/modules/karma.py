@@ -16,8 +16,8 @@ from KynanRobot.utils.mongo import (
     update_karma,
 )
 
-regex_upvote = r"^((?i)\+|\+\+|\+1|\+69|thx|thanx|thanks|🖤|❣️|💝|💖|💕|❤|💘|cool|good|👍|baby|thankyou|love|pro)$"
-regex_downvote = r"^(\-|\-\-|\-1|👎|💔|noob|weak|fuck off|nub|gey|kid|shit|mf)$"
+regex_upvote = r"^((?i)\+|\+\+|\+1|\+69|thx|thanx|thanks|🖤|❣️|💝|💖|💕|❤|💘|cool|good|👍|mksh|terimakasih|love|pro)$"
+regex_downvote = r"^(\-|\-\-|\-1|👎|💔|kntl|kontol|anj|anjing|babi|memek|ngentot|ngen|memeq|ngen)$"
 
 karma_positive_group = 3
 karma_negative_group = 4
@@ -42,7 +42,7 @@ async def upvote(_, message):
     if not message.from_user:
         return
     if message.reply_to_message.from_user.id == OWNER_ID:
-        await message.reply_text("ʜᴏᴡ sᴏ ᴘʀᴏ ?")
+        await message.reply_text("How So Pro?")
         return
     if message.reply_to_message.from_user.id == message.from_user.id:
         return
@@ -58,7 +58,7 @@ async def upvote(_, message):
     new_karma = {"karma": karma}
     await update_karma(chat_id, await int_to_alpha(user_id), new_karma)
     await message.reply_text(
-        f"ɪɴᴄʀᴇᴍᴇɴᴛᴇᴅ ᴋᴀʀᴍᴀ ᴏғ {user_mention} ʙʏ 1.\n**ᴛᴏᴛᴀʟ ᴩᴏɪɴᴛs :** {karma}"
+        f"Incremented Karma Of {user_mention} ʙʏ 1.\n**Total Points :** {karma}"
     )
 
 
@@ -81,7 +81,7 @@ async def downvote(_, message):
     if not message.from_user:
         return
     if message.reply_to_message.from_user.id == OWNER_ID:
-        await message.reply_text("ɪ ᴋɴᴏᴡ ʜɪᴍ, sᴏ ɪ'ᴍ ɴᴏᴛ ɢᴏɴɴᴀ ᴅᴏ ᴛʜᴀᴛ ʙᴀʙʏ.")
+        await message.reply_text("I Know Him, So I'm Not Gonna Do That Baby.")
         return
     if message.reply_to_message.from_user.id == message.from_user.id:
         return
@@ -140,7 +140,7 @@ async def karma(_, message):
         user_id = message.reply_to_message.from_user.id
         karma = await get_karma(message.chat.id, await int_to_alpha(user_id))
         karma = karma["karma"] if karma else 0
-        await message.reply_text(f"**ᴛᴏᴛᴀʟ ᴩᴏɪɴᴛs :** {karma}")
+        await message.reply_text(f"**Total Points :** {karma}")
 
 
 @pbot.on_message(filters.command("karma") & ~filters.private)
